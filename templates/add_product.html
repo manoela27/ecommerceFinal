@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Produto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex border-bottom shadow p-3 mb-2 bg-white rounded">
+    <img class="imgTest" style="width:150px;" src="https://www.araquariev.com.br/wp-content/uploads/sites/445/2015/10/Logo-teste.jpg">
+</div>
+<div class="container mt-4">
+        <h1>Adicionar Produto</h1>
+        <form action="{{ url_for('add_product') }}" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Preço:</label>
+                <input type="number" id="price" name="price" class="form-control" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+        </form>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
