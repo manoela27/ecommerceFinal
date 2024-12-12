@@ -1,15 +1,12 @@
 
 # Ecommerce com Flask
 
-Este é um Ecommerce desenvolvido com Flask. Permite aos usuários criar contas, fazer login, publicar anúncios e visualizar um relatório de vendas. Este projeto é ideal para aqueles que desejam aprender ou desenvolver suas habilidades com Flask e desenvolvimento web em Python.
+Este é um Ecommerce desenvolvido com Flask. Permite aos usuários publicar produtos.
 
 ## Funcionalidades
 
-- Registro e login de usuários
-- Criação, visualização e gerenciamento de anúncios
-- Relatórios de vendas
+- Criação, visualização e gerenciamento de produtos
 - Interface estilizada com Bootstrap
-- Armazenamento de dados em memória
 
 ## Tecnologias Utilizadas
 
@@ -54,17 +51,12 @@ Este é um Ecommerce desenvolvido com Flask. Permite aos usuários criar contas,
 ```
 .
 ├── app.py                  # Arquivo principal da aplicação Flask
-├── models
-│   ├── usuario.py          # Funções relacionadas a usuários
-│   ├── anuncio.py          # Funções relacionadas a anúncios
-│   └── relatorio.py        # Funções relacionadas a relatórios de vendas
 ├── templates
 │   ├── index.html          # Template da página principal
-│   ├── login.html          # Template da página de login
-│   ├── meu_perfil.html     # Template da página de perfil do usuário
-│   ├── meus_anuncios.html  # Template da página de anúncios do usuário
+│   ├── add_product.html    # emplate da página de criação de anúncios
+│   ├── search_results.html  # Template da página para busca
 │   ├── criar_anuncio.html  # Template da página de criação de anúncios
-│   └── relatorio_vendas.html  # Template da página de relatório de vendas
+│   └── update_product.html  # Template da página para upar produto
 ...
 ```
 
