@@ -66,8 +66,8 @@ Este é um Ecommerce desenvolvido com Flask. Permite aos usuários criar contas,
 │   ├── criar_anuncio.html  # Template da página de criação de anúncios
 │   └── relatorio_vendas.html  # Template da página de relatório de vendas
 └── static
-    ├── css                 # Arquivos CSS (se houver)
-    └── js                  # Arquivos JavaScript (se houver)
+    ├── css                 # Arquivos CSS 
+    └── js                  # Arquivos JavaScript 
 ```
 
 Este projeto é destinado a avaliação de exame da disciplina de Frameworks do professor Diogo. 
